@@ -1,0 +1,6 @@
+.idea/
+bin/
+cache/
+cli/
+htaccess.txt
+tmp/

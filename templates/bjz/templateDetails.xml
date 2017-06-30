@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "https://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+    <name>bjz</name>
+    <version>0.0.1</version>
+    <creationDate>26/06/2017</creationDate>
+    <author>Andrei Krauchanka</author>
+    <authorEmail>akravchenko@medialine.by</authorEmail>
+    <files>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <folder>layouts</folder>
+    </files>
+</extension>
