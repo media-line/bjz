@@ -29,7 +29,7 @@ else
 	<form action="<?php echo JRoute::_('index.php'); ?>" method="post" class="form-inline">
 		<?php
 			$output = '<input name="searchword" id="mod-search-searchword' . $module->id . '" maxlength="' . $maxlength . '"  class="inputbox search-query input-medium" type="search"' . $width;
-			$output .= ' placeholder="' . $text . '" />';
+			$output .= ' placeholder="Поиск" />';
 
 			if ($button) :
 				if ($imagebutton) :

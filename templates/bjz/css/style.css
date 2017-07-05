@@ -1,6 +1,26 @@
+@font-face {
+    font-family: MyriadReg;
+    src: url(/templates/bjz/fonts/Myriad/MyriadPro-Regular.otf);
+}
+
+@font-face {
+    font-family: MyriadSemibold;
+    src: url(/templates/bjz/fonts/Myriad/MyriadPro-Semibold.otf);
+}
+
+@font-face {
+    font-family: MyriadLight;
+    src: url(/templates/bjz/fonts/Myriad/Myriad-Pro-Light.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-image: url("/templates/bjz/images/bcg.jpg");
+    background-size: cover;
 }
 
 .container {
@@ -26,6 +46,22 @@
     max-width: 1170px;
 }
 
+.saround {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.sbetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.allWidth {
+    width: 100%;
+}
+
 .nav {
     display: flex;
     flex-direction: row;
@@ -34,11 +70,8 @@
     width: 1170px;
 }
 
-.head_wrapper {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.head {
+    background-color: #e3c93e;
 }
 
 .menu_top {
@@ -50,14 +83,46 @@
     background-color: transparent;
 }
 
+.menu_top .unstyled {
+    display: none;
+}
+
+.menu_top > .nav .parent::after {
+    content: "";
+    background-image: url("/templates/bjz/svg-icons/down-arrow.svg");
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    height: 9px;
+    width: 13px;
+    margin-left: 5px;
+
+}
+
+.menu_top > .nav li {
+    margin-top: 18px;
+    margin-bottom: 19px;
+}
+
 .menu_top > .nav li a {
     font-size: 18px;
     color: #92a626;
+    font-family: MyriadReg;
+}
+
+.menu_bottom {
+    height: 83px;
+}
+
+.menu_bottom > .nav li {
+    display: flex;
 }
 
 .menu_bottom > .nav li a {
     font-size: 20px;
-    color: #3e6322;
+    color: rgb(62, 99, 34);
+    margin: auto 0;
+    font-family: MyriadSemibold;
 }
 
 .menu li {
@@ -68,6 +133,140 @@
     text-decoration: none;
 }
 
-.head {
-    background-color: #e3c93e;
+.phone {
+    align-items: flex-start;
+
+}
+
+.hotLine {
+    font-family: MyriadSemibold;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 23px;
+}
+
+.number {
+    font-family: MyriadSemibold;
+    color: #3e6322;
+    font-size: 25px;
+    margin-bottom: 31px;
+    text-decoration: none;
+}
+
+.logo_img {
+    position: relative;
+    height: 127%;
+}
+
+.search {
+    margin: auto 0;
+}
+
+.form-inline {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.form-inline > .button {
+    margin: auto 0;
+}
+
+.search-query {
+    padding: 14px 0  15px 12px;
+    border: none;
+    width: 262px;
+    color: #000;
+    font-family: MyriadReg;
+    font-size: 16px;
+}
+
+.search-query::-webkit-input-placeholder {
+    color:#7f9372;
+    font-family: MyriadReg;
+    font-size: 16px;
+}
+
+.search-query::-moz-placeholder {
+    color:#7f9372;
+    font-family: MyriadReg;
+    font-size: 16px;
+}
+
+.search-query:-moz-placeholder {
+    color:#7f9372;
+    font-family: MyriadReg;
+    font-size: 16px;
+}
+
+.search-query:-ms-input-placeholder {
+    color:#7f9372;
+    font-family: MyriadReg;
+    font-size: 16px;
+}
+
+.item-page {
+    background-color: rgba(256,256,256,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-page > div {
+    width: 750px;
+}
+
+.item-image {
+    margin-top: 50px;
+}
+
+.item-text {
+    padding-bottom: 80px;
+}
+
+.item-text p {
+    font-family: MyriadLight;
+    font-weight: 100;
+    font-size: 18px;
+    padding-top: 30px;
+}
+
+.footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.portallink {
+    width: 810px;
+    min-width: 810px;
+    max-width: 810px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+
+.bottomfooter {
+    justify-content: space-between;
+    margin-bottom: 85px;
+}
+
+.copyright {
+    color: #fff;
+    font-family: MyriadLight;
+    font-size: 18px;
+}
+
+.developer {
+    color: #fff;
+    font-family: MyriadLight;
+    font-size: 18px;
+}
+
+.developer a {
+    color: rgb(227, 201, 62);
+    font-weight: bold;
+    text-decoration: none;
+    font-family: MyriadReg;
 }

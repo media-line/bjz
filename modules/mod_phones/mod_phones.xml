@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Модуль изменения телефонов</name>
+    <author>John Doe</author>
+    <version>1.0.0</version>
+    <description></description>
+    <files>
+        <filename>mod_phones.xml</filename>
+        <filename module="mod_phones">mod_phones.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field
+                        name="hotline"
+                        type="text"
+                        label="hotLine"
+                        description="Строка белого цвета сверху"
+                        default="Горячая линия"
+                />
+                <field
+                        name="number"
+                        type="text"
+                        label="Строка с телефоном"
+                        description="Зеленая строка с номером телефона"
+                        default="80(232) 94-75-26"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>
