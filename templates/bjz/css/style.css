@@ -38,6 +38,7 @@ body {
     width: 945px;
     min-width: 945px;
     max-width: 945px;
+    margin: 0 auto;
 }
 
 .container_big {
@@ -276,4 +277,30 @@ body {
 
 .copyright, .developer {
     width: 50%;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    color: #3e6322;
+    font-size: 18px;
+    font-family: MyriadLight;
+}
+
+.breadcrumb > li:first-child {
+    display: none;
+}
+
+.breadcrumb a {
+    color: #3e6322;
+}
+
+.breadcrumb li {
+    list-style: none;
+}
+
+.divider {
+    margin-left: 6px;
+    margin-right: 12px;
 }

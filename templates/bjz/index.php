@@ -48,8 +48,11 @@ if ($this->params->get('googleFont')) {
     </div>
 </header>
 <main class="container">
-    <div class="container_ltl">
-        <jdoc:include type="component"/>
+    <div class="container_big">
+        <jdoc:include type="modules" name="brcr" style="xhtml"/>
+        <div class="container_ltl">
+            <jdoc:include type="component"/>
+        </div>
     </div>
 </main>
 <footer class="container footer">
@@ -69,7 +72,7 @@ if ($this->params->get('googleFont')) {
     </div>
     <div class="container container_big bottomfooter">
         <div class="copyright">
-            (c)2017 Гомельский белково-жировой комбинат
+            &copy; 2017 Гомельский белково-жировой комбинат
         </div>
         <div class="developer">
             Разработка сайта - <a href="http://www.medialine.by">Медиа Лайн</a>
